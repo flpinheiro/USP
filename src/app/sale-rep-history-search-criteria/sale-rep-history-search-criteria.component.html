@@ -1,0 +1,40 @@
+<h3>Seach Criteria</h3>
+<form>
+    <label>RepId*
+    <input type="text">
+
+</label>
+    <label *ngIf="PONumber">PO Number
+    <input type="text">
+</label>
+    <label *ngIf="OrderStatus">Order Status
+        <select>
+            <option value="all">all</option>
+            <option value="cl">cl</option>
+        </select>
+</label>
+    <label *ngIf="StatusType">
+    Status Type
+    <select>
+        <option>All</option>
+        <option>failed</option>
+    </select>
+</label>
+    <label>Select Date Range*
+    <select>
+        <option value="Today">Today</option>
+        <option value="Yesterday">Yesterday</option>
+    </select>
+</label>
+    <label>OR Start Date*
+    <input type="date">
+</label>
+    <label>To End Date
+    <input type="date">
+</label>
+    <div>
+        <span *ngIf="ExportToExcel"><button>Reresh Report</button></span>
+        <span><button>Export to Excel</button></span>
+        <span><button>Team Member</button></span>
+    </div>
+</form>

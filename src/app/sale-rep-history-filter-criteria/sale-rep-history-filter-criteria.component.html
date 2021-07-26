@@ -1,0 +1,27 @@
+<h3>Filter Criteria</h3>
+<form>
+    <label>Buid
+        <select>
+            <option value="all">All</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+        </select>
+    </label>
+    <label *ngIf="LOB">LOB
+        <select>
+            <option value="all">All</option>
+            <option value="Acessories">Acessories</option>
+        </select>
+    </label>
+    <label *ngIf="RepType">Rep Type
+        <select>
+            <option>Primary</option>
+            <option>Secondary</option>
+        </select>
+    </label>
+    <label *ngIf="PaymentType">Payment Type
+        <select>
+            <option>All</option>
+        </select>
+    </label>
+</form>
