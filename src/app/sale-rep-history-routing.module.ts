@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SaleRepHistoryComponent } from './sale-rep-history/sale-rep-history.component';
-import { OrderHistoryComponent } from './order-history/order-history.component';
-import { QuoteHistoryComponent } from './quote-history/quote-history.component';
-import { LegacyOrderHistoryComponent } from './legacy-order-history/legacy-order-history.component';
-import { MessageHistoryComponent } from './message-history/message-history.component';
+import { SaleRepHistoryComponent } from './Components/sale-rep-history/sale-rep-history.component';
+import { OrderHistoryComponent } from './Components/order-history/order-history.component';
+import { QuoteHistoryComponent } from './Components/quote-history/quote-history.component';
+import { LegacyOrderHistoryComponent } from './Components/legacy-order-history/legacy-order-history.component';
+import { MessageHistoryComponent } from './Components/message-history/message-history.component';
 
 const routes: Routes = [
   { path: 'order-history', component: OrderHistoryComponent },

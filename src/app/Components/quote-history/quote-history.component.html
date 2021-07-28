@@ -16,7 +16,7 @@
         </select>
     </span>
 
-    <table>
+    <table *ngIf="quoteHistory">
         <thead>
             <tr>
                 <th>Quote date</th>
@@ -33,18 +33,17 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr *ngFor="let order of quoteHistory">
+                <td>{{order.QuoteDate}}</td>
+                <td>{{order.RepID}}</td>
+                <td>{{order.QuoteNumer}}</td>
+                <td>{{order.CustomerNumber}}</td>
+                <td>{{order.LOB}}</td>
+                <td>{{order.Revenue}}</td>
+                <td>{{order.Margin}}</td>
+                <td>{{order.Qty}}</td>
+                <td>{{order.QuoteStatus}}</td>
+                <td>{{order.CompanyNumber}}</td>
             </tr>
         </tbody>
     </table>

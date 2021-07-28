@@ -15,7 +15,7 @@
         </select>
     </span>
 
-    <table>
+    <table *ngIf="orderHistory">
         <thead>
             <tr>
                 <th>Order date</th>
@@ -39,25 +39,26 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr *ngFor="let order of orderHistory">
+                <td>{{order.OrderDate}}</td>
+                <td>{{order.RepID}}</td>
+                <td>{{order.DPID}}</td>
+                <td>{{order.OrderNumber}}</td>
+                <td>{{order.Status}}</td>
+                <td>{{order.StatusDate}}</td>
+                <td>{{order.PB}}</td>
+                <td>{{order.CustomerNumber}}</td>
+                <td>{{order.CustomerName}}</td>
+                <td>{{order.LOB}}</td>
+                <td>{{order.Revenue}}</td>
+                <td>{{order.Margin}}</td>
+                <td>{{order.Qty}}</td>
+                <td>{{order.PaymentType}}</td>
+                <td>{{order.PONumber}}</td>
+                <td>{{order.ShipDate}}</td>
+                <td>{{order.TaskCode}}</td>
+                <td>{{order.CompanyNumber}}</td>
+                <td>{{order.PaymentCode}}</td>
             </tr>
         </tbody>
     </table>

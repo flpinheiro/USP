@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SaleRepHistoryRoutingModule } from '../sale-rep-history-routing.module';
+import { SaleRepHistoryRoutingModule } from '../../sale-rep-history-routing.module';
 
 @Component({
   selector: 'app-sale-rep-history',
